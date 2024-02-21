@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
-    public function IndexAction()
-    {
-        return view('blog');
+    // public function IndexAction()
+    // {
+    //     return view('blog');
 
-    }
+    // }
 
     public function BlogsList()
     {

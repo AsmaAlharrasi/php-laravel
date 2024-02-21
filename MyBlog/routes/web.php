@@ -19,9 +19,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/blog', [ BlogController::class , 'IndexAction']);
-Route::get('/blog', [ BlogController::class , 'BlogsList']);
+// Route::get('/blog', [ BlogController::class , 'IndexAction']);
+Route::get('/blog', [ BlogController::class , 'BlogsList'])->name('blog');
 
-
-Route::get('/home', [ HomeController::class , 'IndexAction']);
+Route::get('/home', [ HomeController::class , 'IndexAction'])->name('home');
 
