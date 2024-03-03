@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="container">
+<div class="">
   <div class=" d-flex justify-content-between mb-3 mt-3">
     <h1 class="text-center mt-2">My Blogs</h1>
     <a href="{{route('create')}}" class="btn btn-primary m-2 mb-3">Create New Post </a>
@@ -14,7 +14,7 @@
     @foreach($posts as $post)
     <div class="col">
       <div class="card h-100">
-        <img src="..." class="card-img-top" alt="...">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
         <div class="card-body">
           <h5 class="card-title">{{$post->id}}</h5>
           <h5 class="card-title">{{$post->title}}</h5>
@@ -38,9 +38,9 @@
 
           </div>
         </div>
-        <div class="card-footer">
+        <!-- <div class="card-footer">
           <small class="text-muted">Last updated 3 mins ago</small>
-        </div>
+        </div> -->
       </div>
     </div>
 
